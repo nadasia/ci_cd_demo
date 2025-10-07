@@ -1,0 +1,12 @@
+name: CI pipeline
+on: [workflow_dispatch] # Run it manually from the UI.
+env:
+  DOCKER_USERNAME: 'samson84cc'
+  DOCKER_REPO: 'animal-shelter'
+jobs:
+  build-job:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Hello
+        run: 'echo 👋 Hello ${{ github.actor }} from the GitHub Actions.'
+
