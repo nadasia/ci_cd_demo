@@ -1,5 +1,8 @@
 name: CI pipeline
-on: [ push ] # Run it manually from the UI.
+on:
+  push:
+    branches:
+      - main
 env:
   DOCKER_USERNAME: 'samson84cc'
   DOCKER_REPO: 'animal-shelter'
